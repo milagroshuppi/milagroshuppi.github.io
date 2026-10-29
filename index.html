@@ -90,6 +90,7 @@ section h2 { font-family: var(--font-display); font-weight: 700; font-size: 13px
 section h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 
 .entry { display: grid; gap: 6px; }
+.entry + .entry { margin-top: 22px; }
 .entry-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; }
 .entry-title { font-weight: 600; font-size: 16px; margin: 0; }
 .when { font-family: var(--font-mono); font-size: 12.5px; color: var(--steel); white-space: nowrap; }
@@ -219,6 +220,21 @@ details ol { margin: 8px 0 0; padding-left: 20px; display: grid; gap: 4px; }
             <li>Investigación y aprendizaje autónomo de una tecnología nueva para llevarla a un proyecto real.</li>
             <li>Pruebas, registro de resultados y coordinación con el equipo para definir necesidades y resolver problemas técnicos.</li>
           </ul>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <h3 class="entry-title">Pasante de Datos y Operaciones</h3>
+            <span class="when">03/2026 – 09/2026</span>
+          </div>
+          <p class="where">IT Convergence · Córdoba, Argentina · Equipo de BI y Analítica — cliente: planta automotriz</p>
+          <ul class="bul">
+            <li>Automaticé el reporte semanal de paradas de línea con Python y SQL, a partir de los datos de producción del ERP del cliente, y reemplacé una planilla que se armaba a mano.</li>
+            <li>Calculé indicadores de disponibilidad y un análisis de Pareto de los motivos de parada, con alertas automáticas para máquinas críticas y paradas largas.</li>
+            <li>Desarrollé un dashboard en Power BI para que el jefe de planta siguiera el rendimiento de la línea.</li>
+            <li>Trabajé con ingenieros industriales y de mantenimiento para entender el proceso productivo y validar la calidad de los datos.</li>
+            <li>Participé en las pruebas del reporte y en la capacitación de los usuarios de planta antes de pasarlo a producción.</li>
+          </ul>
+          <div class="stack"><span>Python</span><span>Java</span><span>SQL</span><span>API de Claude</span><span>FastAPI</span><span>Postman</span><span>Playwright</span><span>JUnit</span><span>REST Assured</span><span>GitHub Actions</span><span>JIRA</span><span>Confluence</span><span>Power BI</span><span>Git</span></div>
         </div>
       </section>
 
