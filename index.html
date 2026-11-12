@@ -193,9 +193,9 @@ details ol { margin: 8px 0 0; padding-left: 20px; display: grid; gap: 4px; }
         <span class="lens-label" id="lens-label">Ver perfil enfocado en:</span>
         <div class="tabs" role="tablist" aria-labelledby="lens-label">
           <button class="tab" role="tab" id="tab-general" data-lens="general" type="button">General</button>
-          <button class="tab" role="tab" id="tab-rd" data-lens="rd" type="button">Investigación en IA</button>
-          <button class="tab" role="tab" id="tab-roela" data-lens="roela" type="button">Integraciones y clientes</button>
-          <button class="tab" role="tab" id="tab-renault" data-lens="renault" type="button">Industria y robótica</button>
+          <button class="tab" role="tab" id="tab-ia" data-lens="ia" type="button">Investigación en IA</button>
+          <button class="tab" role="tab" id="tab-integraciones" data-lens="integraciones" type="button">Integraciones y clientes</button>
+          <button class="tab" role="tab" id="tab-industria" data-lens="industria" type="button">Industria y robótica</button>
         </div>
         <p class="pitch" id="pitch" aria-live="polite"></p>
       </div>
@@ -242,7 +242,7 @@ details ol { margin: 8px 0 0; padding-left: 20px; display: grid; gap: 4px; }
       <section>
         <h2>Proyectos</h2>
         <div class="projects" id="projects">
-          <article class="project" data-key="rd">
+          <article class="project" data-key="ia">
             <span class="badge">Prueba de concepto · IA</span>
             <h3>Comparador de IA</h3>
             <p>Compara modelos y prompts de IA generativa sobre un mismo set de tareas, con criterios medibles, y genera un reporte con ranking y recomendación.</p>
@@ -259,7 +259,7 @@ details ol { margin: 8px 0 0; padding-left: 20px; display: grid; gap: 4px; }
             <a class="gh" href="https://github.com/milagroshuppi/comparador-ia-poc" target="_blank" rel="noopener">github.com/milagroshuppi/comparador-ia-poc</a>
           </article>
 
-          <article class="project" data-key="roela">
+          <article class="project" data-key="integraciones">
             <span class="badge">API REST · Integración</span>
             <h3>API de Integración de Cobranzas</h3>
             <p>Integra el sistema de gestión de una empresa con las notificaciones de pago de un banco y concilia facturas automáticamente.</p>
@@ -281,20 +281,20 @@ details ol { margin: 8px 0 0; padding-left: 20px; display: grid; gap: 4px; }
       <section>
         <h2>Habilidades técnicas</h2>
         <div class="chips" id="chips">
-          <span class="chip" data-tags="rd roela renault">Python</span>
-          <span class="chip" data-tags="rd">IA generativa</span>
-          <span class="chip" data-tags="rd">Prompt engineering</span>
-          <span class="chip" data-tags="rd">API de Claude</span>
-          <span class="chip" data-tags="roela">APIs REST · FastAPI</span>
-          <span class="chip" data-tags="roela">SQL · bases de datos</span>
-          <span class="chip" data-tags="roela">Análisis de requerimientos</span>
-          <span class="chip" data-tags="roela">UML · casos de uso</span>
-          <span class="chip" data-tags="rd roela">Testing (pytest)</span>
-          <span class="chip" data-tags="renault">ROS 2</span>
-          <span class="chip" data-tags="renault">Linux</span>
+          <span class="chip" data-tags="ia integraciones industria">Python</span>
+          <span class="chip" data-tags="ia">IA generativa</span>
+          <span class="chip" data-tags="ia">Prompt engineering</span>
+          <span class="chip" data-tags="ia">API de Claude</span>
+          <span class="chip" data-tags="integraciones">APIs REST · FastAPI</span>
+          <span class="chip" data-tags="integraciones">SQL · bases de datos</span>
+          <span class="chip" data-tags="integraciones">Análisis de requerimientos</span>
+          <span class="chip" data-tags="integraciones">UML · casos de uso</span>
+          <span class="chip" data-tags="ia integraciones">Testing (pytest)</span>
+          <span class="chip" data-tags="industria">ROS 2</span>
+          <span class="chip" data-tags="industria">Linux</span>
           <span class="chip" data-tags="">Java</span>
           <span class="chip" data-tags="">JavaScript</span>
-          <span class="chip" data-tags="rd roela renault">Git · GitHub · GitLab</span>
+          <span class="chip" data-tags="ia integraciones industria">Git · GitHub · GitLab</span>
         </div>
         <p class="chip-note" id="chip-note"></p>
       </section>
@@ -340,15 +340,15 @@ const LENSES = {
     pitch: 'Estudiante de Ingeniería en Sistemas con foco en <strong>inteligencia artificial aplicada</strong> y <strong>análisis de sistemas</strong>. Investigo, pruebo y documento tecnologías nuevas para resolver necesidades reales.',
     note: ''
   },
-  rd: {
+  ia: {
     pitch: 'Uso IA generativa todos los días y me formo en el área. Mi proyecto <strong>Comparador de IA</strong> hace lo que pide un equipo de investigación: armar una prueba de concepto, comparar alternativas con criterios definidos y documentar una recomendación.',
     note: 'Resaltadas: las habilidades más relevantes para investigación en IA.'
   },
-  roela: {
+  integraciones: {
     pitch: 'Me interesa donde se cruzan tecnología, negocio y clientes. Mi <strong>API de Integración de Cobranzas</strong> simula cómo un banco se integra con el sistema de gestión de una empresa, y en la facultad trabajo análisis de requerimientos y casos de uso.',
     note: 'Resaltadas: las habilidades más relevantes para integraciones y trabajo con clientes.'
   },
-  renault: {
+  industria: {
     pitch: 'En el <strong>CUDAR</strong> integro software con un robot físico real usando ROS 2 y Linux: pruebas, ajustes y trabajo en equipo sobre un sistema que se mueve. Busco seguir aprendiendo en un entorno industrial.',
     note: 'Resaltadas: las habilidades más relevantes para tecnología aplicada a la industria.'
   }
